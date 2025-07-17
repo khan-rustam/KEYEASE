@@ -1,0 +1,239 @@
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Icon from '../../components/AppIcon';
+import ContactForm from './components/ContactForm';
+import ContactInfo from './components/ContactInfo';
+import ConsultationBooking from './components/ConsultationBooking';
+import LocationMap from './components/LocationMap';
+import FAQSection from './components/FAQSection';
+import LiveChat from './components/LiveChat';
+import ClientPortal from './components/ClientPortal';
+
+const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6 }
+    }
+  };
+
+  const trustSignals = [
+    {
+      icon: 'Clock',
+      title: '24-Hour Response',
+      description: 'Guaranteed response within 24 hours'
+    },
+    {
+      icon: 'Shield',
+      title: 'Secure & Confidential',
+      description: 'Your information is protected with SSL encryption'
+    },
+    {
+      icon: 'Users',
+      title: '500+ Happy Clients',
+      description: 'Trusted by businesses worldwide'
+    },
+    {
+      icon: 'Award',
+      title: 'Industry Certified',
+      description: 'Certified professionals with proven expertise'
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      
+      {/* Hero Section */}
+      <motion.section 
+        className="pt-24 pb-16 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5"
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <motion.div variants={itemVariants} className="mb-6">
+              <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <Icon name="MessageCircle" size={16} />
+                <span>Let's Start Something Amazing</span>
+              </div>
+            </motion.div>
+
+            <motion.h1 
+              variants={itemVariants}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-6"
+            >
+              Get In Touch With{' '}
+              <span className="brand-gradient-text">KEYEASE</span>
+            </motion.h1>
+
+            <motion.p 
+              variants={itemVariants}
+              className="text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed"
+            >
+              Ready to transform your digital presence? Let's discuss your project and explore how we can help you achieve your goals with cutting-edge solutions.
+            </motion.p>
+
+            <motion.div 
+              variants={itemVariants}
+              className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+            >
+              {trustSignals.map((signal, index) => (
+                <div key={index} className="text-center">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <Icon name={signal.icon} size={24} className="text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-text-primary text-sm mb-1">
+                    {signal.title}
+                  </h3>
+                  <p className="text-xs text-text-secondary">
+                    {signal.description}
+                  </p>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Main Content */}
+      <motion.section 
+        className="py-16"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={containerVariants}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Contact Form */}
+            <motion.div variants={itemVariants} className="lg:col-span-2">
+              <ContactForm />
+            </motion.div>
+
+            {/* Contact Info */}
+            <motion.div variants={itemVariants}>
+              <ContactInfo />
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Consultation Booking */}
+      <motion.section 
+        className="py-16 bg-muted/50"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={containerVariants}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <motion.div variants={itemVariants}>
+              <ConsultationBooking />
+            </motion.div>
+
+            <motion.div variants={itemVariants}>
+              <ClientPortal />
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Location & FAQ */}
+      <motion.section 
+        className="py-16"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={containerVariants}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <motion.div variants={itemVariants}>
+              <LocationMap />
+            </motion.div>
+
+            <motion.div variants={itemVariants}>
+              <FAQSection />
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Emergency Support Banner */}
+      <motion.section 
+        className="py-12 bg-gradient-to-r from-destructive/5 to-warning/5"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={containerVariants}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            variants={itemVariants}
+            className="bg-white rounded-2xl shadow-brand p-8"
+          >
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <div className="flex items-center space-x-4 mb-6 md:mb-0">
+                <div className="w-16 h-16 bg-destructive/10 rounded-lg flex items-center justify-center">
+                  <Icon name="AlertTriangle" size={32} className="text-destructive" />
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-bold text-text-primary mb-2">
+                    Emergency Support
+                  </h3>
+                  <p className="text-text-secondary">
+                    Critical issues? Our emergency support team is available 24/7 for existing clients.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:+15551234567"
+                  className="flex items-center space-x-2 px-6 py-3 bg-destructive text-white rounded-lg hover:bg-destructive/90 transition-colors font-medium"
+                >
+                  <Icon name="Phone" size={20} />
+                  <span>Emergency Line</span>
+                </a>
+                
+                <a
+                  href="mailto:emergency@keyease.digital"
+                  className="flex items-center space-x-2 px-6 py-3 border border-destructive text-destructive rounded-lg hover:bg-destructive/5 transition-colors font-medium"
+                >
+                  <Icon name="Mail" size={20} />
+                  <span>Emergency Email</span>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Footer */}
+      {/* Live Chat Widget */}
+      <LiveChat />
+    </div>
+  );
+};
+
+export default Contact;
