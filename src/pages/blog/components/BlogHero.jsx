@@ -1,6 +1,6 @@
-import React from 'react';
-import Icon from '../../../components/AppIcon';
-import Button from '../../../components/ui/Button';
+import React from "react";
+import Icon from "../../../components/AppIcon";
+import Button from "../../../components/ui/Button";
 
 const BlogHero = () => {
   return (
@@ -17,37 +17,21 @@ const BlogHero = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-full px-4 py-2 mb-6">
             <Icon name="BookOpen" size={16} className="text-primary" />
-            <span className="text-sm font-medium text-slate-700">Knowledge Hub</span>
+            <span className="text-sm font-medium text-slate-700">
+              Knowledge Hub
+            </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Insights & 
-            <span className="brand-gradient-text"> Innovation</span>
+            Insights &<span className="brand-gradient-text"> Innovation</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Discover the latest trends, technical deep-dives, and strategic insights that drive digital transformation success.
+            Discover the latest trends, technical deep-dives, and strategic
+            insights that drive digital transformation success.
           </p>
-
-          {/* Stats */}
-          <div className="flex flex-wrap justify-center items-center gap-8 mb-10">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-slate-900">150+</div>
-              <div className="text-sm text-slate-600">Articles Published</div>
-            </div>
-            <div className="hidden sm:block w-px h-8 bg-slate-300"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-slate-900">25K+</div>
-              <div className="text-sm text-slate-600">Monthly Readers</div>
-            </div>
-            <div className="hidden sm:block w-px h-8 bg-slate-300"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-slate-900">12</div>
-              <div className="text-sm text-slate-600">Expert Authors</div>
-            </div>
-          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -57,14 +41,7 @@ const BlogHero = () => {
               iconName="Mail"
               iconPosition="left"
               iconSize={16}
-            >
-              Subscribe to Newsletter
-            </Button>
-            <Button
-              variant="outline"
-              iconName="Search"
-              iconPosition="left"
-              iconSize={16}
+              onClick={() => navigate("/blog")}
             >
               Explore Topics
             </Button>

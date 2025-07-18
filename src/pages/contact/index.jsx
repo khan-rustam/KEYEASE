@@ -148,60 +148,6 @@ const Contact = () => {
         </motion.div>
       </motion.section>
 
-      {/* Emergency Support Banner */}
-      <motion.section 
-        className="py-12 bg-gradient-to-r from-destructive/5 to-warning/5"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={containerVariants}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            variants={itemVariants}
-            className="bg-white rounded-2xl shadow-brand p-8"
-          >
-            <div className="flex flex-col md:flex-row items-center justify-between">
-              <div className="flex items-center space-x-4 mb-6 md:mb-0">
-                <div className="w-16 h-16 bg-destructive/10 rounded-lg flex items-center justify-center">
-                  <Icon name="AlertTriangle" size={32} className="text-destructive" />
-                </div>
-                
-                <div>
-                  <h3 className="text-2xl font-bold text-text-primary mb-2">
-                    Emergency Support
-                  </h3>
-                  <p className="text-text-secondary">
-                    Critical issues? Our emergency support team is available 24/7 for existing clients.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="tel:+15551234567"
-                  className="flex items-center space-x-2 px-6 py-3 bg-destructive text-white rounded-lg hover:bg-destructive/90 transition-colors font-medium"
-                >
-                  <Icon name="Phone" size={20} />
-                  <span>Emergency Line</span>
-                </a>
-                
-                <a
-                  href="mailto:emergency@Kayease.digital"
-                  className="flex items-center space-x-2 px-6 py-3 border border-destructive text-destructive rounded-lg hover:bg-destructive/5 transition-colors font-medium"
-                >
-                  <Icon name="Mail" size={20} />
-                  <span>Emergency Email</span>
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </motion.section>
-
-      {/* Footer */}
-      {/* Live Chat Widget */}
-      <LiveChat />
     </div>
   );
 };

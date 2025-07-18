@@ -127,7 +127,7 @@ const Footer = () => {
             <Link to="/homepage" className="flex items-center space-x-3 group">
               <div className="relative flex items-center space-x-3">
                 <img
-                  src={"/Kayease-logo.png"}
+                  src={"/Kayease-black.png"}
                   alt="Kayease Logo"
                   className="w-52 h-28 object-contain rounded-lg transition-all duration-300"
                 />
@@ -358,25 +358,7 @@ const Footer = () => {
               </a>
             </div>
 
-            {/* Newsletter Signup */}
-            <div className="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl p-4 border border-primary/10">
-              <h5 className="text-sm font-medium text-slate-800 mb-2">
-                Newsletter
-              </h5>
-              <p className="text-xs text-slate-600 mb-3">
-                Get updates on our latest projects and insights.
-              </p>
-              <div className="flex space-x-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-3 py-2 text-xs bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors duration-200"
-                />
-                <button className="px-4 py-2 bg-primary text-white text-xs rounded-lg hover:bg-primary/90 transition-colors duration-200 flex items-center space-x-1">
-                  <Send size={12} strokeWidth={2} />
-                </button>
-              </div>
-            </div>
+            
           </div>
         </div>
 

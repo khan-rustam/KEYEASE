@@ -407,67 +407,12 @@ const BlogDetail = () => {
 
             {/* Meta Information */}
             <div className="flex flex-wrap items-center gap-6 text-sm text-slate-600 mb-8">
-              <div className="flex items-center space-x-2">
-                <img
-                  src={blog.author.avatar}
-                  alt={blog.author.name}
-                  className="w-8 h-8 rounded-full"
-                />
-                <div>
-                  <p className="font-medium text-slate-800">
-                    {blog.author.name}
-                  </p>
-                  <p className="text-xs text-slate-500">{blog.author.role}</p>
-                </div>
-              </div>
+             
               <div className="flex items-center space-x-1">
                 <Icon name="Calendar" size={14} />
                 <span>{blog.date}</span>
               </div>
-              <div className="flex items-center space-x-1">
-                <Icon name="Clock" size={14} />
-                <span>{blog.readTime} min read</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <Icon name="Eye" size={14} />
-                <span>{blog.views} views</span>
-              </div>
-            </div>
-
-            {/* Action Buttons */}
-            <div className="flex items-center space-x-3 mb-8">
-              <button
-                onClick={() => setIsLiked(!isLiked)}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-lg border transition-all duration-200 ${
-                  isLiked
-                    ? "bg-red-50 border-red-200 text-red-600"
-                    : "bg-white border-slate-200 text-slate-600 hover:bg-slate-50"
-                }`}
-              >
-                <Icon
-                  name={isLiked ? "Heart" : "Heart"}
-                  size={16}
-                  className={isLiked ? "fill-current" : ""}
-                />
-                <span>{blog.likes}</span>
-              </button>
-
-              <button
-                onClick={() => setIsBookmarked(!isBookmarked)}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-lg border transition-all duration-200 ${
-                  isBookmarked
-                    ? "bg-blue-50 border-blue-200 text-blue-600"
-                    : "bg-white border-slate-200 text-slate-600 hover:bg-slate-50"
-                }`}
-              >
-                <Icon
-                  name="Bookmark"
-                  size={16}
-                  className={isBookmarked ? "fill-current" : ""}
-                />
-                <span>Save</span>
-              </button>
-
+              <div>
               <button
                 onClick={handleShare}
                 className="flex items-center space-x-2 px-4 py-2 rounded-lg border bg-white border-slate-200 text-slate-600 hover:bg-slate-50 transition-all duration-200"
@@ -475,7 +420,9 @@ const BlogDetail = () => {
                 <Icon name="Share2" size={16} />
                 <span>Share</span>
               </button>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -501,9 +448,9 @@ const BlogDetail = () => {
 
       {/* Article Content */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1  gap-12">
           {/* Main Content */}
-          <div className="lg:col-span-3">
+          <div >
             <div
               data-animate
               id="article-content"
@@ -545,99 +492,7 @@ const BlogDetail = () => {
             </div>
           </div>
 
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-24 space-y-8">
-              {/* Author Info */}
-              <div
-                data-animate
-                id="author-info"
-                className={`bg-white rounded-2xl p-6 shadow-sm border border-slate-200/50 transition-all duration-700 delay-500 ${
-                  animatedElements.has("author-info")
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
-                }`}
-              >
-                <h3 className="text-lg font-semibold text-slate-800 mb-4">
-                  About the Author
-                </h3>
-                <div className="flex items-center space-x-3 mb-4">
-                  <img
-                    src={blog.author.avatar}
-                    alt={blog.author.name}
-                    className="w-12 h-12 rounded-full"
-                  />
-                  <div>
-                    <p className="font-medium text-slate-800">
-                      {blog.author.name}
-                    </p>
-                    <p className="text-sm text-slate-600">{blog.author.role}</p>
-                  </div>
-                </div>
-                <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                  {blog.author.bio}
-                </p>
-                <div className="flex space-x-2">
-                  <button className="p-2 bg-slate-100 hover:bg-primary/10 hover:text-primary rounded-lg transition-colors duration-200">
-                    <Icon name="Twitter" size={16} />
-                  </button>
-                  <button className="p-2 bg-slate-100 hover:bg-primary/10 hover:text-primary rounded-lg transition-colors duration-200">
-                    <Icon name="Linkedin" size={16} />
-                  </button>
-                  <button className="p-2 bg-slate-100 hover:bg-primary/10 hover:text-primary rounded-lg transition-colors duration-200">
-                    <Icon name="Globe" size={16} />
-                  </button>
-                </div>
-              </div>
-
-              {/* Table of Contents */}
-              <div
-                data-animate
-                id="table-of-contents"
-                className={`bg-white rounded-2xl p-6 shadow-sm border border-slate-200/50 transition-all duration-700 delay-600 ${
-                  animatedElements.has("table-of-contents")
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
-                }`}
-              >
-                <h3 className="text-lg font-semibold text-slate-800 mb-4">
-                  Table of Contents
-                </h3>
-                <nav className="space-y-2">
-                  <a
-                    href="#introduction"
-                    className="block text-sm text-slate-600 hover:text-primary transition-colors duration-200 py-1"
-                  >
-                    Introduction
-                  </a>
-                  <a
-                    href="#server-components"
-                    className="block text-sm text-slate-600 hover:text-primary transition-colors duration-200 py-1"
-                  >
-                    Understanding Server Components
-                  </a>
-                  <a
-                    href="#concurrent-features"
-                    className="block text-sm text-slate-600 hover:text-primary transition-colors duration-200 py-1"
-                  >
-                    Concurrent Features
-                  </a>
-                  <a
-                    href="#best-practices"
-                    className="block text-sm text-slate-600 hover:text-primary transition-colors duration-200 py-1"
-                  >
-                    Best Practices
-                  </a>
-                  <a
-                    href="#performance"
-                    className="block text-sm text-slate-600 hover:text-primary transition-colors duration-200 py-1"
-                  >
-                    Performance Impact
-                  </a>
-                </nav>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </section>
 
@@ -719,47 +574,6 @@ const BlogDetail = () => {
         </section>
       )}
 
-      {/* Newsletter CTA */}
-      <section className="py-16 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <div className="absolute top-10 left-1/4 w-6 h-6 bg-white/20 rounded-full geometric-float"></div>
-        <div className="absolute bottom-10 right-1/3 w-4 h-4 bg-white/20 rounded-full geometric-float animation-delay-400"></div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div
-            data-animate
-            id="newsletter-cta"
-            className={`transition-all duration-700 delay-900 ${
-              animatedElements.has("newsletter-cta")
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-8"
-            }`}
-          >
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Stay Updated with Our Latest Articles
-            </h2>
-            <p className="text-xl text-white/90 mb-8">
-              Get the latest insights on web development, design, and technology
-              delivered to your inbox.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-3 rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-white/20"
-              />
-              <Button
-                variant="secondary"
-                className="bg-white text-primary hover:bg-white/90 font-medium whitespace-nowrap"
-                iconName="Send"
-                iconPosition="right"
-              >
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

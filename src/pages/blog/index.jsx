@@ -4,10 +4,6 @@ import CategoryFilter from './components/CategoryFilter';
 import FeaturedPost from './components/FeaturedPost';
 import BlogCard from './components/BlogCard';
 import SearchBar from './components/SearchBar';
-import NewsletterSignup from './components/NewsletterSignup';
-import PopularPosts from './components/PopularPosts';
-import RecentPosts from './components/RecentPosts';
-import AuthorSpotlight from './components/AuthorSpotlight';
 import Pagination from './components/Pagination';
 import Icon from '../../components/AppIcon';
 
@@ -175,93 +171,6 @@ const Blog = () => {
     }
   ];
 
-  const popularPosts = [
-    {
-      id: 101,
-      title: "10 Essential React Hooks Every Developer Should Know",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=100&h=100&fit=crop",
-      date: "July 1, 2025",
-      views: "5.2K"
-    },
-    {
-      id: 102,
-      title: "Complete Guide to Next.js App Router",
-      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?w=100&h=100&fit=crop",
-      date: "June 25, 2025",
-      views: "4.8K"
-    },
-    {
-      id: 103,
-      title: "Building APIs with Node.js and Express",
-      image: "https://images.pixabay.com/photo/2015/09/17/17/25/code-944499_1280.jpg?w=100&h=100&fit=crop",
-      date: "June 20, 2025",
-      views: "4.3K"
-    },
-    {
-      id: 104,
-      title: "CSS Grid vs Flexbox: When to Use What",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-      date: "June 15, 2025",
-      views: "3.9K"
-    },
-    {
-      id: 105,
-      title: "JavaScript Performance Optimization Tips",
-      image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?w=100&h=100&fit=crop",
-      date: "June 10, 2025",
-      views: "3.7K"
-    }
-  ];
-
-  const recentPosts = [
-    {
-      id: 201,
-      title: "Getting Started with Tailwind CSS",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=100&h=100&fit=crop",
-      date: "July 15, 2025",
-      readTime: 4
-    },
-    {
-      id: 202,
-      title: "Database Design Best Practices",
-      image: "https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg?w=100&h=100&fit=crop",
-      date: "July 13, 2025",
-      readTime: 7
-    },
-    {
-      id: 203,
-      title: "Introduction to GraphQL",
-      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?w=100&h=100&fit=crop",
-      date: "July 11, 2025",
-      readTime: 6
-    },
-    {
-      id: 204,
-      title: "Modern Authentication Strategies",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=100&h=100&fit=crop",
-      date: "July 9, 2025",
-      readTime: 8
-    },
-    {
-      id: 205,
-      title: "Docker for Frontend Developers",
-      image: "https://images.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg?w=100&h=100&fit=crop",
-      date: "July 7, 2025",
-      readTime: 5
-    }
-  ];
-
-  const authorSpotlight = {
-    name: "Sarah Chen",
-    role: "Senior Full-Stack Developer",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    bio: "Passionate about creating scalable web applications and sharing knowledge with the developer community.",
-    articles: 24,
-    followers: "1.2K",
-    experience: 8,
-    expertise: ["React", "Node.js", "TypeScript", "AWS", "GraphQL"]
-  };
-
   // Filter posts based on category and search term
   useEffect(() => {
     let filtered = blogPosts;
@@ -309,14 +218,14 @@ const Blog = () => {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid  gap-8">
           {/* Main Content Area */}
-          <div className="lg:col-span-3">
+          <div >
             {/* Search Bar */}
             <SearchBar onSearch={handleSearch} />
 
             {/* Category Filter */}
-            <CategoryFilter
+            <CategoryFilter 
               categories={categories}
               activeCategory={activeCategory}
               onCategoryChange={handleCategoryChange}
@@ -376,39 +285,6 @@ const Blog = () => {
                 <p className="text-slate-600">Try adjusting your search or filter criteria</p>
               </div>
             )}
-
-            {/* Newsletter Signup */}
-            <NewsletterSignup />
-          </div>
-
-          {/* Sidebar */}
-          <div className="lg:col-span-1 space-y-8">
-            {/* Popular Posts */}
-            <PopularPosts posts={popularPosts} />
-
-            {/* Recent Posts */}
-            <RecentPosts posts={recentPosts} />
-
-            {/* Author Spotlight */}
-            <AuthorSpotlight author={authorSpotlight} />
-
-            {/* Topics Cloud */}
-            <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
-              <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Tag" size={20} className="text-primary" />
-                <h3 className="text-lg font-semibold text-slate-900">Popular Topics</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['React', 'Next.js', 'TypeScript', 'Node.js', 'GraphQL', 'AWS', 'MongoDB', 'Docker', 'Kubernetes', 'Microservices'].map((topic) => (
-                  <button
-                    key={topic}
-                    className="px-3 py-1 text-sm bg-slate-100 text-slate-700 rounded-full hover:bg-primary hover:text-white transition-colors"
-                  >
-                    {topic}
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>

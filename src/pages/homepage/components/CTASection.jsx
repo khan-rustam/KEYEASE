@@ -102,23 +102,13 @@ const CTASection = () => {
                 iconName="Calendar"
                 iconPosition="left"
                 iconSize={24}
+                onClick={() => navigate("/contact")}
               >
-                Book Free Consultation
+                Book Our Services
               </Button>
             </Link>
 
-            <Link to="/portfolio">
-              <Button
-                variant="outline"
-                size="xl"
-                className="border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm font-bold px-10 py-5 text-lg min-w-[250px]"
-                iconName="Play"
-                iconPosition="left"
-                iconSize={24}
-              >
-                Watch Our Story
-              </Button>
-            </Link>
+            
           </div>
         </motion.div>
 
@@ -157,59 +147,7 @@ const CTASection = () => {
           ))}
         </motion.div>
 
-        {/* Newsletter Signup */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="bg-white/10 backdrop-blur-md rounded-2xl p-8 lg:p-12 mb-20"
-        >
-          <div className="text-center mb-8">
-            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
-              Stay Updated with Industry Insights
-            </h3>
-            <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-              Get the latest trends, tips, and case studies delivered to your inbox. 
-              Join 5,000+ professionals who trust our insights.
-            </p>
-          </div>
-
-          <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex-1">
-                <Input
-                  type="email"
-                  placeholder="Enter your email address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="bg-white/20 border-white/30 text-white placeholder-white/70"
-                  required
-                />
-              </div>
-              <Button
-                type="submit"
-                variant="default"
-                className="cta-button text-white font-semibold px-8"
-                iconName={isSubmitted ? "Check" : "Send"}
-                iconPosition="right"
-                disabled={isSubmitted}
-              >
-                {isSubmitted ? 'Subscribed!' : 'Subscribe'}
-              </Button>
-            </div>
-          </form>
-
-          {isSubmitted && (
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-center mt-4 text-green-300 font-medium"
-            >
-              Thank you for subscribing! Check your email for confirmation.
-            </motion.div>
-          )}
-        </motion.div>
+     
 
         {/* Quick Actions */}
         <motion.div
@@ -263,16 +201,13 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
             <div className="flex items-center text-blue-200">
               <Icon name="Phone" size={20} className="mr-3" />
-              <span>+1 (555) 123-4567</span>
+              <span><a href="tel:+91 9876543210">+91 9876543210</a></span>
             </div>
             <div className="flex items-center text-blue-200">
               <Icon name="Mail" size={20} className="mr-3" />
-              <span>hello@Kayease.com</span>
+              <span><a href="mailto:Connect@kayease.com">Connect@kayease.com</a></span>
             </div>
-            <div className="flex items-center text-blue-200">
-              <Icon name="MessageCircle" size={20} className="mr-3" />
-              <span>Live Chat Available</span>
-            </div>
+            
           </div>
         </motion.div>
       </div>
