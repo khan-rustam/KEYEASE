@@ -7,28 +7,28 @@ const ContactInfo = () => {
     {
       icon: 'Mail',
       title: 'Email Us',
-      primary: 'hello@Kayease.digital',
-      secondary: 'support@Kayease.digital',
+      primary: 'Connect@Kayease.com',
+      secondary: '',
       description: 'Get a response within 24 hours',
-      action: 'mailto:hello@Kayease.digital',
+      action: 'mailto:Connect@Kayease.com',
       actionText: 'Send Email'
     },
     {
       icon: 'Phone',
       title: 'Call Us',
-      primary: '+1 (555) 123-4567',
-      secondary: '+1 (555) 987-6543',
-      description: 'Mon-Fri, 9AM-6PM EST',
-      action: 'tel:+15551234567',
+      primary: '+91 97840 81045',
+      secondary: '',
+      description: 'Mon-Fri, 9AM-6PM IST',
+      action: 'tel:+919784081045',
       actionText: 'Call Now'
     },
     {
       icon: 'MapPin',
       title: 'Visit Us',
-      primary: '123 Innovation Drive',
-      secondary: 'San Francisco, CA 94105',
+      primary: '11B 3rd Floor RSEB Officers Colony',
+      secondary: 'Opp- Inox, D-Block, Vaishali Nagar, Jaipur-302021',
       description: 'Schedule an appointment',
-      action: '#',
+      action: 'https://maps.google.com/?q=11B%203rd%20Floor%20RSEB%20officers%20colony,%20Opp-%20Inox,%20D-Block,%20Vaishali%20Nagar,%20Jaipur-302021',
       actionText: 'Get Directions'
     }
   ];
@@ -118,60 +118,6 @@ const ContactInfo = () => {
             <span className="text-sm font-medium text-text-primary">
               Emergency Support Available 24/7 for Existing Clients
             </span>
-          </div>
-        </div>
-      </div>
-
-      {/* Social Media */}
-      <div className="bg-white rounded-2xl shadow-brand p-8">
-        <h3 className="text-xl font-bold text-text-primary mb-6">
-          Follow Us
-        </h3>
-        
-        <div className="grid grid-cols-2 gap-4">
-          {socialLinks.map((social, index) => (
-            <a
-              key={index}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-3 p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
-            >
-              <Icon 
-                name={social.icon} 
-                size={20} 
-                className="text-text-secondary group-hover:text-primary transition-colors" 
-              />
-              <span className="text-text-secondary group-hover:text-primary transition-colors font-medium">
-                {social.name}
-              </span>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      {/* Response Time Guarantee */}
-      <div className="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10">
-        <div className="flex items-start space-x-4">
-          <div className="flex-shrink-0">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-              <Icon name="Zap" size={24} color="white" />
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold text-text-primary mb-2">
-              24-Hour Response Guarantee
-            </h3>
-            <p className="text-text-secondary mb-4">
-              We respond to all project inquiries within 24 hours during business days. 
-              For urgent matters, call us directly for immediate assistance.
-            </p>
-            
-            <div className="flex items-center space-x-2 text-sm text-accent font-medium">
-              <Icon name="CheckCircle" size={16} />
-              <span>Trusted by 500+ clients worldwide</span>
-            </div>
           </div>
         </div>
       </div>

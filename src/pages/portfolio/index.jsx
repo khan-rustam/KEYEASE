@@ -1,28 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
-import Header from '../../components/ui/Header';
-import ProjectCard from './components/ProjectCard';
-import FilterTabs from './components/FilterTabs';
-import ProjectModal from './components/ProjectModal';
-import StatsSection from './components/StatsSection';
-import ClientLogos from './components/ClientLogos';
-import FeaturedCaseStudy from './components/FeaturedCaseStudy';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
+import ProjectCard from "./components/ProjectCard";
+import FilterTabs from "./components/FilterTabs";
+import ProjectModal from "./components/ProjectModal";
+import StatsSection from "./components/StatsSection";
+import ClientLogos from "./components/ClientLogos";
+import FeaturedCaseStudy from "./components/FeaturedCaseStudy";
 
-import Button from '../../components/ui/Button';
+import Button from "../../components/ui/Button";
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [filteredProjects, setFilteredProjects] = useState([]);
 
   const filters = [
-    { id: 'all', name: 'All Projects', icon: 'Grid3X3', count: 24 },
-    { id: 'saas', name: 'SaaS', icon: 'Cloud', count: 8 },
-    { id: 'ecommerce', name: 'E-commerce', icon: 'ShoppingCart', count: 6 },
-    { id: 'healthcare', name: 'Healthcare', icon: 'Heart', count: 4 },
-    { id: 'fintech', name: 'Fintech', icon: 'CreditCard', count: 6 }
+    { id: "all", name: "All Projects", icon: "Grid3X3", count: 24 },
+    { id: "saas", name: "SaaS", icon: "Cloud", count: 8 },
+    { id: "ecommerce", name: "E-commerce", icon: "ShoppingCart", count: 6 },
+    { id: "healthcare", name: "Healthcare", icon: "Heart", count: 4 },
+    { id: "fintech", name: "Fintech", icon: "CreditCard", count: 6 },
   ];
 
   const projects = [
@@ -32,70 +31,92 @@ const Portfolio = () => {
       client: "MedTech Solutions",
       category: "healthcare",
       year: "2024",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop&crop=center",
-      description: "Comprehensive healthcare management platform with patient tracking, appointment scheduling, and medical records management.",
+      image:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop&crop=center",
+      description:
+        "Comprehensive healthcare management platform with patient tracking, appointment scheduling, and medical records management.",
       fullDescription: `HealthCare Pro Dashboard is a comprehensive healthcare management platform designed to streamline medical practice operations. The system integrates patient management, appointment scheduling, medical records, billing, and reporting into a unified, user-friendly interface.\n\nThe platform was built with scalability in mind, supporting multi-location practices and various medical specialties. Advanced security measures ensure HIPAA compliance while maintaining optimal performance.`,
-      challenge: "The client needed a HIPAA-compliant platform that could handle complex medical workflows while maintaining ease of use for healthcare professionals with varying technical expertise.",
+      challenge:
+        "The client needed a HIPAA-compliant platform that could handle complex medical workflows while maintaining ease of use for healthcare professionals with varying technical expertise.",
       tags: ["Web App", "Dashboard", "Healthcare"],
       technologies: [
         { name: "React", icon: "Code" },
         { name: "Node.js", icon: "Server" },
         { name: "PostgreSQL", icon: "Database" },
-        { name: "AWS", icon: "Cloud" }
+        { name: "AWS", icon: "Cloud" },
       ],
       metrics: [
         { value: "45%", label: "Efficiency Boost" },
         { value: "99.9%", label: "Uptime" },
-        { value: "2.1s", label: "Load Time" }
+        { value: "2.1s", label: "Load Time" },
       ],
       detailedMetrics: [
-        { value: "45%", label: "Efficiency Increase", description: "Reduced administrative time" },
-        { value: "99.9%", label: "System Uptime", description: "Reliable 24/7 availability" },
-        { value: "2.1s", label: "Average Load Time", description: "Fast page loading" },
-        { value: "98%", label: "User Satisfaction", description: "Positive feedback score" }
+        {
+          value: "45%",
+          label: "Efficiency Increase",
+          description: "Reduced administrative time",
+        },
+        {
+          value: "99.9%",
+          label: "System Uptime",
+          description: "Reliable 24/7 availability",
+        },
+        {
+          value: "2.1s",
+          label: "Average Load Time",
+          description: "Fast page loading",
+        },
+        {
+          value: "98%",
+          label: "User Satisfaction",
+          description: "Positive feedback score",
+        },
       ],
       achievements: [
         "HIPAA compliance certification achieved",
         "Integrated with 5+ major EHR systems",
         "Reduced patient wait times by 30%",
-        "Automated 80% of routine administrative tasks"
+        "Automated 80% of routine administrative tasks",
       ],
       process: [
         {
           title: "Discovery & Planning",
           description: "Conducted stakeholder interviews and workflow analysis",
-          duration: "2 weeks"
+          duration: "2 weeks",
         },
         {
           title: "Design & Prototyping",
-          description: "Created user-centered designs and interactive prototypes",
-          duration: "3 weeks"
+          description:
+            "Created user-centered designs and interactive prototypes",
+          duration: "3 weeks",
         },
         {
           title: "Development",
-          description: "Built the platform using modern technologies and best practices",
-          duration: "12 weeks"
+          description:
+            "Built the platform using modern technologies and best practices",
+          duration: "12 weeks",
         },
         {
           title: "Testing & Deployment",
           description: "Comprehensive testing and secure deployment",
-          duration: "3 weeks"
-        }
+          duration: "3 weeks",
+        },
       ],
       gallery: [
         "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=center",
         "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center",
-        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop&crop=center"
+        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop&crop=center",
       ],
       testimonial: {
-        content: "Kayease transformed our practice operations completely. The dashboard is intuitive, powerful, and has significantly improved our patient care quality.",
+        content:
+          "Kayease transformed our practice operations completely. The dashboard is intuitive, powerful, and has significantly improved our patient care quality.",
         author: "Dr. Sarah Johnson",
         position: "Chief Medical Officer",
-        company: "MedTech Solutions"
+        company: "MedTech Solutions",
       },
       liveUrl: "https://healthcare-pro-demo.com",
       caseStudyUrl: "https://Kayease.com/case-studies/healthcare-pro",
-      timeline: "5 months"
+      timeline: "5 months",
     },
     {
       id: 2,
@@ -103,69 +124,89 @@ const Portfolio = () => {
       client: "Digital Bank Corp",
       category: "fintech",
       year: "2024",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center",
-      description: "Modern mobile banking application with advanced security features, real-time transactions, and AI-powered financial insights.",
+      image:
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center",
+      description:
+        "Modern mobile banking application with advanced security features, real-time transactions, and AI-powered financial insights.",
       fullDescription: `FinanceFlow is a next-generation mobile banking application that combines cutting-edge security with intuitive user experience. The app features biometric authentication, real-time transaction processing, AI-powered spending insights, and comprehensive financial management tools.\n\nBuilt with React Native for cross-platform compatibility, the app integrates with multiple banking APIs and payment processors while maintaining bank-grade security standards.`,
-      challenge: "Creating a secure, user-friendly mobile banking experience that could compete with established financial institutions while ensuring regulatory compliance.",
+      challenge:
+        "Creating a secure, user-friendly mobile banking experience that could compete with established financial institutions while ensuring regulatory compliance.",
       tags: ["Mobile App", "Fintech", "Banking"],
       technologies: [
         { name: "React Native", icon: "Smartphone" },
         { name: "Node.js", icon: "Server" },
         { name: "MongoDB", icon: "Database" },
-        { name: "Stripe", icon: "CreditCard" }
+        { name: "Stripe", icon: "CreditCard" },
       ],
       metrics: [
         { value: "4.8★", label: "App Rating" },
         { value: "150K+", label: "Downloads" },
-        { value: "0.1s", label: "Response Time" }
+        { value: "0.1s", label: "Response Time" },
       ],
       detailedMetrics: [
-        { value: "4.8★", label: "App Store Rating", description: "User satisfaction score" },
-        { value: "150K+", label: "Active Downloads", description: "Monthly active users" },
-        { value: "0.1s", label: "API Response Time", description: "Lightning-fast transactions" },
-        { value: "99.99%", label: "Security Score", description: "Zero security incidents" }
+        {
+          value: "4.8★",
+          label: "App Store Rating",
+          description: "User satisfaction score",
+        },
+        {
+          value: "150K+",
+          label: "Active Downloads",
+          description: "Monthly active users",
+        },
+        {
+          value: "0.1s",
+          label: "API Response Time",
+          description: "Lightning-fast transactions",
+        },
+        {
+          value: "99.99%",
+          label: "Security Score",
+          description: "Zero security incidents",
+        },
       ],
       achievements: [
         "Bank-grade security implementation",
         "Real-time transaction processing",
         "AI-powered financial insights",
-        "Cross-platform compatibility achieved"
+        "Cross-platform compatibility achieved",
       ],
       process: [
         {
           title: "Market Research",
           description: "Analyzed competitor apps and user behavior patterns",
-          duration: "2 weeks"
+          duration: "2 weeks",
         },
         {
           title: "UX/UI Design",
           description: "Created intuitive mobile-first design system",
-          duration: "4 weeks"
+          duration: "4 weeks",
         },
         {
           title: "Development",
           description: "Built native-quality cross-platform application",
-          duration: "16 weeks"
+          duration: "16 weeks",
         },
         {
           title: "Security Testing",
           description: "Comprehensive security audits and penetration testing",
-          duration: "4 weeks"
-        }
+          duration: "4 weeks",
+        },
       ],
       gallery: [
         "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
         "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop&crop=center",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
       ],
       testimonial: {
-        content: "The FinanceFlow app exceeded our expectations. It's secure, fast, and our customers love the intuitive interface.",
+        content:
+          "The FinanceFlow app exceeded our expectations. It's secure, fast, and our customers love the intuitive interface.",
         author: "Michael Chen",
         position: "CTO",
-        company: "Digital Bank Corp"
+        company: "Digital Bank Corp",
       },
       liveUrl: "https://financeflow-demo.com",
-      timeline: "6.5 months"
+      timeline: "6.5 months",
     },
     {
       id: 3,
@@ -173,69 +214,89 @@ const Portfolio = () => {
       client: "Green Commerce Ltd",
       category: "ecommerce",
       year: "2024",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
-      description: "Sustainable e-commerce platform with advanced product filtering, eco-friendly shipping options, and carbon footprint tracking.",
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
+      description:
+        "Sustainable e-commerce platform with advanced product filtering, eco-friendly shipping options, and carbon footprint tracking.",
       fullDescription: `EcoMarket is a revolutionary e-commerce platform focused on sustainable products and eco-friendly shopping experiences. The platform features advanced product categorization, sustainability ratings, carbon footprint tracking, and green shipping options.\n\nThe system includes vendor management, inventory tracking, customer reviews, and integrated payment processing, all optimized for environmental consciousness and user experience.`,
-      challenge: "Building a scalable e-commerce platform that could handle high traffic while promoting sustainable shopping practices and maintaining fast performance.",
+      challenge:
+        "Building a scalable e-commerce platform that could handle high traffic while promoting sustainable shopping practices and maintaining fast performance.",
       tags: ["E-commerce", "Sustainability", "Web Platform"],
       technologies: [
         { name: "Next.js", icon: "Code" },
         { name: "Stripe", icon: "CreditCard" },
         { name: "PostgreSQL", icon: "Database" },
-        { name: "Vercel", icon: "Cloud" }
+        { name: "Vercel", icon: "Cloud" },
       ],
       metrics: [
         { value: "340%", label: "Sales Growth" },
         { value: "6.8%", label: "Conversion Rate" },
-        { value: "1.1s", label: "Page Speed" }
+        { value: "1.1s", label: "Page Speed" },
       ],
       detailedMetrics: [
-        { value: "340%", label: "Sales Increase", description: "Year-over-year growth" },
-        { value: "6.8%", label: "Conversion Rate", description: "Visitor to customer ratio" },
-        { value: "1.1s", label: "Page Load Speed", description: "Average loading time" },
-        { value: "92%", label: "Customer Retention", description: "Repeat purchase rate" }
+        {
+          value: "340%",
+          label: "Sales Increase",
+          description: "Year-over-year growth",
+        },
+        {
+          value: "6.8%",
+          label: "Conversion Rate",
+          description: "Visitor to customer ratio",
+        },
+        {
+          value: "1.1s",
+          label: "Page Load Speed",
+          description: "Average loading time",
+        },
+        {
+          value: "92%",
+          label: "Customer Retention",
+          description: "Repeat purchase rate",
+        },
       ],
       achievements: [
         "Sustainable product certification system",
         "Carbon footprint calculator integration",
         "Multi-vendor marketplace functionality",
-        "Mobile-first responsive design"
+        "Mobile-first responsive design",
       ],
       process: [
         {
           title: "Platform Architecture",
           description: "Designed scalable e-commerce architecture",
-          duration: "3 weeks"
+          duration: "3 weeks",
         },
         {
           title: "UI/UX Development",
           description: "Created engaging shopping experience",
-          duration: "5 weeks"
+          duration: "5 weeks",
         },
         {
           title: "Backend Development",
           description: "Built robust API and database systems",
-          duration: "14 weeks"
+          duration: "14 weeks",
         },
         {
           title: "Testing & Launch",
           description: "Performance optimization and deployment",
-          duration: "4 weeks"
-        }
+          duration: "4 weeks",
+        },
       ],
       gallery: [
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
         "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
       ],
       testimonial: {
-        content: "Kayease delivered an exceptional e-commerce platform that perfectly aligns with our sustainability mission. Sales have tripled since launch.",
+        content:
+          "Kayease delivered an exceptional e-commerce platform that perfectly aligns with our sustainability mission. Sales have tripled since launch.",
         author: "Emma Rodriguez",
         position: "Founder & CEO",
-        company: "Green Commerce Ltd"
+        company: "Green Commerce Ltd",
       },
       liveUrl: "https://ecomarket-demo.com",
-      timeline: "6.5 months"
+      timeline: "6.5 months",
     },
     {
       id: 4,
@@ -243,69 +304,89 @@ const Portfolio = () => {
       client: "TechFlow Systems",
       category: "saas",
       year: "2024",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
-      description: "Enterprise-grade SaaS platform for team collaboration with real-time sync, advanced analytics, and multi-tenant architecture.",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+      description:
+        "Enterprise-grade SaaS platform for team collaboration with real-time sync, advanced analytics, and multi-tenant architecture.",
       fullDescription: `CloudSync is a comprehensive SaaS platform designed for enterprise team collaboration. The system features real-time document synchronization, advanced project management tools, team communication features, and detailed analytics dashboards.\n\nBuilt with a multi-tenant architecture, the platform supports unlimited users, custom branding, API integrations, and enterprise-grade security features.`,
-      challenge: "Developing a scalable SaaS platform that could handle thousands of concurrent users while maintaining real-time synchronization and data consistency.",
+      challenge:
+        "Developing a scalable SaaS platform that could handle thousands of concurrent users while maintaining real-time synchronization and data consistency.",
       tags: ["SaaS", "Collaboration", "Enterprise"],
       technologies: [
         { name: "React", icon: "Code" },
         { name: "Node.js", icon: "Server" },
         { name: "Redis", icon: "Database" },
-        { name: "Docker", icon: "Container" }
+        { name: "Docker", icon: "Container" },
       ],
       metrics: [
         { value: "10K+", label: "Active Users" },
         { value: "99.9%", label: "Uptime" },
-        { value: "50ms", label: "Sync Speed" }
+        { value: "50ms", label: "Sync Speed" },
       ],
       detailedMetrics: [
-        { value: "10K+", label: "Monthly Active Users", description: "Growing user base" },
-        { value: "99.9%", label: "System Uptime", description: "Reliable availability" },
-        { value: "50ms", label: "Real-time Sync", description: "Lightning-fast updates" },
-        { value: "95%", label: "User Satisfaction", description: "Customer happiness score" }
+        {
+          value: "10K+",
+          label: "Monthly Active Users",
+          description: "Growing user base",
+        },
+        {
+          value: "99.9%",
+          label: "System Uptime",
+          description: "Reliable availability",
+        },
+        {
+          value: "50ms",
+          label: "Real-time Sync",
+          description: "Lightning-fast updates",
+        },
+        {
+          value: "95%",
+          label: "User Satisfaction",
+          description: "Customer happiness score",
+        },
       ],
       achievements: [
         "Multi-tenant architecture implementation",
         "Real-time collaboration features",
         "Enterprise security compliance",
-        "Scalable microservices design"
+        "Scalable microservices design",
       ],
       process: [
         {
           title: "System Design",
           description: "Architected scalable multi-tenant platform",
-          duration: "4 weeks"
+          duration: "4 weeks",
         },
         {
           title: "Core Development",
           description: "Built collaboration and sync features",
-          duration: "16 weeks"
+          duration: "16 weeks",
         },
         {
           title: "Security Implementation",
           description: "Added enterprise-grade security",
-          duration: "3 weeks"
+          duration: "3 weeks",
         },
         {
           title: "Performance Optimization",
           description: "Optimized for scale and speed",
-          duration: "3 weeks"
-        }
+          duration: "3 weeks",
+        },
       ],
       gallery: [
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
-        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center"
+        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center",
       ],
       testimonial: {
-        content: "CloudSync has revolutionized how our teams collaborate. The real-time features and reliability are outstanding.",
+        content:
+          "CloudSync has revolutionized how our teams collaborate. The real-time features and reliability are outstanding.",
         author: "David Park",
         position: "VP of Engineering",
-        company: "TechFlow Systems"
+        company: "TechFlow Systems",
       },
       liveUrl: "https://cloudsync-demo.com",
-      timeline: "6.5 months"
+      timeline: "6.5 months",
     },
     {
       id: 5,
@@ -313,69 +394,89 @@ const Portfolio = () => {
       client: "Retail Innovations",
       category: "ecommerce",
       year: "2023",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
-      description: "Advanced inventory management system with predictive analytics, automated reordering, and multi-location support.",
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
+      description:
+        "Advanced inventory management system with predictive analytics, automated reordering, and multi-location support.",
       fullDescription: `RetailPro is an advanced inventory management system designed for multi-location retail operations. The platform features predictive analytics, automated reordering, real-time stock tracking, and comprehensive reporting capabilities.\n\nThe system integrates with popular POS systems, e-commerce platforms, and accounting software to provide a unified view of inventory across all channels.`,
-      challenge: "Creating an inventory system that could predict demand patterns and automate reordering while managing complex multi-location inventory flows.",
+      challenge:
+        "Creating an inventory system that could predict demand patterns and automate reordering while managing complex multi-location inventory flows.",
       tags: ["Inventory", "Analytics", "Retail"],
       technologies: [
         { name: "Vue.js", icon: "Code" },
         { name: "Python", icon: "Server" },
         { name: "MySQL", icon: "Database" },
-        { name: "TensorFlow", icon: "Brain" }
+        { name: "TensorFlow", icon: "Brain" },
       ],
       metrics: [
         { value: "60%", label: "Cost Reduction" },
         { value: "95%", label: "Accuracy" },
-        { value: "30%", label: "Time Saved" }
+        { value: "30%", label: "Time Saved" },
       ],
       detailedMetrics: [
-        { value: "60%", label: "Inventory Costs", description: "Reduced carrying costs" },
-        { value: "95%", label: "Forecast Accuracy", description: "Demand prediction precision" },
-        { value: "30%", label: "Time Savings", description: "Automated processes" },
-        { value: "99%", label: "Stock Availability", description: "Reduced stockouts" }
+        {
+          value: "60%",
+          label: "Inventory Costs",
+          description: "Reduced carrying costs",
+        },
+        {
+          value: "95%",
+          label: "Forecast Accuracy",
+          description: "Demand prediction precision",
+        },
+        {
+          value: "30%",
+          label: "Time Savings",
+          description: "Automated processes",
+        },
+        {
+          value: "99%",
+          label: "Stock Availability",
+          description: "Reduced stockouts",
+        },
       ],
       achievements: [
         "AI-powered demand forecasting",
         "Multi-location inventory sync",
         "Automated reorder point calculation",
-        "Real-time analytics dashboard"
+        "Real-time analytics dashboard",
       ],
       process: [
         {
           title: "Requirements Analysis",
           description: "Analyzed complex inventory workflows",
-          duration: "3 weeks"
+          duration: "3 weeks",
         },
         {
           title: "AI Model Development",
           description: "Built predictive analytics engine",
-          duration: "8 weeks"
+          duration: "8 weeks",
         },
         {
           title: "System Integration",
           description: "Connected with existing retail systems",
-          duration: "10 weeks"
+          duration: "10 weeks",
         },
         {
           title: "Training & Deployment",
           description: "User training and system rollout",
-          duration: "3 weeks"
-        }
+          duration: "3 weeks",
+        },
       ],
       gallery: [
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
-        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center"
+        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center",
       ],
       testimonial: {
-        content: "RetailPro has transformed our inventory management. The predictive features have saved us thousands in carrying costs.",
+        content:
+          "RetailPro has transformed our inventory management. The predictive features have saved us thousands in carrying costs.",
         author: "Lisa Thompson",
         position: "Operations Director",
-        company: "Retail Innovations"
+        company: "Retail Innovations",
       },
       liveUrl: "https://retailpro-demo.com",
-      timeline: "6 months"
+      timeline: "6 months",
     },
     {
       id: 6,
@@ -383,77 +484,99 @@ const Portfolio = () => {
       client: "Digital Assets Inc",
       category: "fintech",
       year: "2023",
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&crop=center",
-      description: "Secure cryptocurrency trading platform with advanced charting, portfolio management, and institutional-grade security.",
+      image:
+        "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&crop=center",
+      description:
+        "Secure cryptocurrency trading platform with advanced charting, portfolio management, and institutional-grade security.",
       fullDescription: `CryptoTrade is a professional cryptocurrency trading platform designed for both retail and institutional traders. The platform features advanced charting tools, real-time market data, portfolio management, and institutional-grade security measures.\n\nBuilt with high-frequency trading in mind, the system can handle thousands of transactions per second while maintaining security and compliance with financial regulations.`,
-      challenge: "Building a high-performance trading platform that could handle massive transaction volumes while ensuring security and regulatory compliance.",
+      challenge:
+        "Building a high-performance trading platform that could handle massive transaction volumes while ensuring security and regulatory compliance.",
       tags: ["Cryptocurrency", "Trading", "Security"],
       technologies: [
         { name: "React", icon: "Code" },
         { name: "WebSocket", icon: "Zap" },
         { name: "Redis", icon: "Database" },
-        { name: "Kubernetes", icon: "Container" }
+        { name: "Kubernetes", icon: "Container" },
       ],
       metrics: [
         { value: "10K", label: "TPS" },
         { value: "99.99%", label: "Security" },
-        { value: "5ms", label: "Latency" }
+        { value: "5ms", label: "Latency" },
       ],
       detailedMetrics: [
-        { value: "10K", label: "Transactions/Second", description: "High-frequency trading" },
-        { value: "99.99%", label: "Security Score", description: "Zero breaches" },
-        { value: "5ms", label: "Order Latency", description: "Ultra-fast execution" },
-        { value: "$50M+", label: "Daily Volume", description: "Trading volume handled" }
+        {
+          value: "10K",
+          label: "Transactions/Second",
+          description: "High-frequency trading",
+        },
+        {
+          value: "99.99%",
+          label: "Security Score",
+          description: "Zero breaches",
+        },
+        {
+          value: "5ms",
+          label: "Order Latency",
+          description: "Ultra-fast execution",
+        },
+        {
+          value: "$50M+",
+          label: "Daily Volume",
+          description: "Trading volume handled",
+        },
       ],
       achievements: [
         "High-frequency trading capability",
         "Multi-layer security architecture",
         "Real-time market data integration",
-        "Regulatory compliance framework"
+        "Regulatory compliance framework",
       ],
       process: [
         {
           title: "Security Architecture",
           description: "Designed multi-layer security system",
-          duration: "4 weeks"
+          duration: "4 weeks",
         },
         {
           title: "Trading Engine",
           description: "Built high-performance matching engine",
-          duration: "12 weeks"
+          duration: "12 weeks",
         },
         {
           title: "UI Development",
           description: "Created professional trading interface",
-          duration: "8 weeks"
+          duration: "8 weeks",
         },
         {
           title: "Compliance Testing",
           description: "Regulatory compliance verification",
-          duration: "4 weeks"
-        }
+          duration: "4 weeks",
+        },
       ],
       gallery: [
         "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop&crop=center",
         "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
       ],
       testimonial: {
-        content: "The CryptoTrade platform is incredibly fast and secure. It\'s exactly what we needed for our institutional clients.",
+        content:
+          "The CryptoTrade platform is incredibly fast and secure. It's exactly what we needed for our institutional clients.",
         author: "Robert Kim",
         position: "Head of Trading",
-        company: "Digital Assets Inc"
+        company: "Digital Assets Inc",
       },
       liveUrl: "https://cryptotrade-demo.com",
-      timeline: "7 months"
-    }
+      timeline: "7 months",
+    },
   ];
 
   useEffect(() => {
-    if (activeFilter === 'all') {
+    if (activeFilter === "all") {
       setFilteredProjects(projects);
     } else {
-      setFilteredProjects(projects.filter(project => project.category === activeFilter));
+      setFilteredProjects(
+        projects.filter((project) => project.category === activeFilter)
+      );
     }
   }, [activeFilter]);
 
@@ -471,13 +594,19 @@ const Portfolio = () => {
     <>
       <Helmet>
         <title>Portfolio - Kayease Digital Agency</title>
-        <meta name="description" content="Explore Kayease's portfolio of successful digital projects across SaaS, E-commerce, Healthcare, and Fintech industries. View case studies and client success stories." />
-        <meta name="keywords" content="portfolio, case studies, web development, mobile apps, digital agency, Kayease" />
+        <meta
+          name="description"
+          content="Explore Kayease's portfolio of successful digital projects across SaaS, E-commerce, Healthcare, and Fintech industries. View case studies and client success stories."
+        />
+        <meta
+          name="keywords"
+          content="portfolio, case studies, web development, mobile apps, digital agency, Kayease"
+        />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
-        <Header />
         
+
         {/* Hero Section */}
         <section className="pt-24 pb-16 bg-gradient-to-br from-primary/10 via-secondary/5 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -489,14 +618,15 @@ const Portfolio = () => {
               >
                 Our <span className="brand-gradient-text">Portfolio</span>
               </motion.h1>
-              
+
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
                 className="text-xl text-gray-600 max-w-3xl mx-auto mb-8"
               >
-                Discover how we've helped businesses transform their digital presence with innovative solutions that drive real results
+                Discover how we've helped businesses transform their digital
+                presence with innovative solutions that drive real results
               </motion.p>
 
               <motion.div
@@ -513,7 +643,7 @@ const Portfolio = () => {
                 >
                   Watch Success Stories
                 </Button>
-                
+
                 <Button
                   variant="outline"
                   iconName="Download"
@@ -595,7 +725,7 @@ const Portfolio = () => {
             >
               Ready to Start Your Success Story?
             </motion.h2>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -603,7 +733,8 @@ const Portfolio = () => {
               transition={{ delay: 0.1 }}
               className="text-xl text-white/90 mb-8"
             >
-              Let's discuss how we can help transform your digital presence and achieve your business goals
+              Let's discuss how we can help transform your digital presence and
+              achieve your business goals
             </motion.p>
 
             <motion.div
@@ -621,7 +752,7 @@ const Portfolio = () => {
               >
                 Start a Conversation
               </Button>
-              
+
               <Button
                 variant="ghost"
                 className="text-white border-white hover:bg-white/10"

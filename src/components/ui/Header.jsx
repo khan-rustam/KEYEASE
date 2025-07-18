@@ -27,7 +27,7 @@ const Header = () => {
 
     // Check for user authentication
     const checkAuth = () => {
-      const userData = localStorage.getItem('user');
+      const userData = localStorage.getItem("user");
       if (userData) {
         setUser(JSON.parse(userData));
       }
@@ -35,7 +35,7 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
     checkAuth();
-    
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -44,10 +44,10 @@ const Header = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('authToken');
-    localStorage.removeItem('user');
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("user");
     setUser(null);
-    navigate('/');
+    navigate("/");
   };
 
   const closeMenu = () => {
@@ -60,7 +60,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/20 backdrop-blur-md ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/20 backdrop-blur-lg ${
         isScrolled ? "shadow-brand border-b border-slate-200/50" : ""
       }`}
     >
@@ -74,9 +74,9 @@ const Header = () => {
           >
             <div className="relative flex items-center space-x-3">
               <img
-                src={"/Kayease-logo.png"}
+                src={"/Kayease-black.png"}
                 alt="Kayease Logo"
-                className="w-36 h-40 object-contain rounded-lg transition-all duration-300"
+                className="w-44 h-44 object-contain rounded-lg transition-all duration-300"
               />
             </div>
           </Link>

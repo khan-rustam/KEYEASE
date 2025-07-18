@@ -17,8 +17,8 @@ const LocationMap = () => {
             <Icon name="MapPin" size={20} className="text-primary mt-1" />
             <div>
               <p className="font-medium text-text-primary">Kayease Digital Agency</p>
-              <p className="text-text-secondary">123 Innovation Drive</p>
-              <p className="text-text-secondary">San Francisco, CA 94105</p>
+              <p className="text-text-secondary">11B 3rd Floor RSEB Officers Colony</p>
+              <p className="text-text-secondary">Opp- Inox, D-Block, Vaishali Nagar, Jaipur-302021</p>
             </div>
           </div>
           
@@ -41,7 +41,7 @@ const LocationMap = () => {
           loading="lazy"
           title="Kayease Digital Agency Location"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=37.7749,-122.4194&z=14&output=embed"
+          src="https://www.google.com/maps?q=11B%203rd%20Floor%20RSEB%20officers%20colony,%20Opp-%20Inox,%20D-Block,%20Vaishali%20Nagar,%20Jaipur-302021&z=16&output=embed"
           className="border-0"
         />
       </div>
@@ -54,7 +54,7 @@ const LocationMap = () => {
           </div>
           
           <button
-            onClick={() => window.open('https://maps.google.com/?q=37.7749,-122.4194', '_blank')}
+            onClick={() => window.open('https://maps.google.com/?q=11B%203rd%20Floor%20RSEB%20officers%20colony,%20Opp-%20Inox,%20D-Block,%20Vaishali%20Nagar,%20Jaipur-302021', '_blank')}
             className="flex items-center space-x-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
           >
             <Icon name="Navigation" size={16} />

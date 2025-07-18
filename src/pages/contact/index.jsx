@@ -3,11 +3,8 @@ import { motion } from 'framer-motion';
 import Icon from '../../components/AppIcon';
 import ContactForm from './components/ContactForm';
 import ContactInfo from './components/ContactInfo';
-import ConsultationBooking from './components/ConsultationBooking';
 import LocationMap from './components/LocationMap';
-import FAQSection from './components/FAQSection';
 import LiveChat from './components/LiveChat';
-import ClientPortal from './components/ClientPortal';
 
 const Contact = () => {
   useEffect(() => {
@@ -136,46 +133,19 @@ const Contact = () => {
         </div>
       </motion.section>
 
-      {/* Consultation Booking */}
-      <motion.section 
-        className="py-16 bg-muted/50"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={containerVariants}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <motion.div variants={itemVariants}>
-              <ConsultationBooking />
-            </motion.div>
-
-            <motion.div variants={itemVariants}>
-              <ClientPortal />
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
+     
 
       {/* Location & FAQ */}
       <motion.section 
-        className="py-16"
+        className="py-16 w-full min-h-[400px] flex justify-center items-center bg-white"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={containerVariants}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <motion.div variants={itemVariants}>
-              <LocationMap />
-            </motion.div>
-
-            <motion.div variants={itemVariants}>
-              <FAQSection />
-            </motion.div>
-          </div>
-        </div>
+        <motion.div variants={itemVariants} className="w-full max-w-5xl">
+          <LocationMap />
+        </motion.div>
       </motion.section>
 
       {/* Emergency Support Banner */}

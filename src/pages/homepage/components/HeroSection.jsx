@@ -49,7 +49,10 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 brand-gradient opacity-90"
         style={{
-          background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, #5e90f0 0%, #00B2FF 50%, #0057FF 100%)`,
+          background: `
+    linear-gradient(to right, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 50%),
+    radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, #5e90f0 0%, #00B2FF 50%, #0057FF 100%)
+  `,
         }}
       />
 
@@ -100,19 +103,16 @@ const HeroSection = () => {
         >
           {/* Main Headline with Typewriter Effect */}
           <div className="space-y-4">
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
-              {displayText}
-              <span className="animate-pulse">|</span>
+            <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-center"
+              style={{ color: '#111' }}
+            >
+              Unlocking Digital Potential
             </h1>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2.5, duration: 0.8 }}
-              className="text-xl sm:text-2xl lg:text-3xl text-blue-100 font-medium max-w-4xl mx-auto"
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center"
+              style={{ color: '#333' }}
             >
               Smart, Scalable Solutions From Code to Conversions
-            </motion.p>
+            </h2>
           </div>
 
           {/* Subheading */}
@@ -120,7 +120,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 3, duration: 0.8 }}
-            className="text-lg sm:text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed"
           >
             We architect digital ecosystems that scale with your ambition.
             Transform complex challenges into streamlined solutions with
@@ -175,10 +175,10 @@ const HeroSection = () => {
               { number: "24/7", label: "Support Available" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-white mb-2">
+                <div className="text-3xl lg:text-4xl font-bold text-black mb-2">
                   {stat.number}
                 </div>
-                <div className="text-blue-200 text-sm lg:text-base">
+                <div className="text-gray-900 text-sm lg:text-base">
                   {stat.label}
                 </div>
               </div>

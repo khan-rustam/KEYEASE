@@ -14,7 +14,7 @@ const HeroSection = () => {
             alt="Kayease team collaboration"
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-sky-400/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-black-400/10"></div>
         </div>
       </div>
 

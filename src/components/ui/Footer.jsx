@@ -146,10 +146,10 @@ const Footer = () => {
                   <Mail size={16} className="text-primary" strokeWidth={2} />
                 </div>
                 <a
-                  href="mailto:info@Kayease.com"
+                  href="mailto:Connect@Kayease.com"
                   className="text-sm text-slate-600 hover:text-primary transition-colors duration-200 hover:underline"
                 >
-                  info@Kayease.com
+                  Connect@Kayease.com
                 </a>
               </div>
               <div className="flex items-center space-x-3 group">
@@ -157,10 +157,10 @@ const Footer = () => {
                   <Phone size={16} className="text-primary" strokeWidth={2} />
                 </div>
                 <a
-                  href="tel:+918005700627"
+                  href="tel:+919784081045"
                   className="text-sm text-slate-600 hover:text-primary transition-colors duration-200 hover:underline"
                 >
-                  +91 80057 00627
+                  +91 97840 81045
                 </a>
               </div>
             </div>

@@ -224,12 +224,7 @@ const ContactForm = () => {
         </div>
 
         <div className="space-y-4">
-          <Checkbox
-            label="Subscribe to our newsletter for digital insights and updates"
-            checked={formData.newsletter}
-            onChange={(e) => handleInputChange(e)}
-            name="newsletter"
-          />
+         
 
           <Checkbox
             label="I agree to the Terms of Service and Privacy Policy"
