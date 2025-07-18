@@ -14,7 +14,7 @@ const ClientPortal = () => {
   // Mock credentials for demo
   const mockCredentials = {
     email: 'client@company.com',
-    password: 'KeyEase2025!'
+    password: 'Kayease2025!'
   };
 
   const handleInputChange = (e) => {
@@ -57,7 +57,7 @@ const ClientPortal = () => {
       } else {
         setErrors({
           email: 'Invalid credentials. Use: client@company.com',
-          password: 'Invalid credentials. Use: KeyEase2025!'
+          password: 'Invalid credentials. Use: Kayease2025!'
         });
       }
       setIsLogging(false);
@@ -152,7 +152,7 @@ const ClientPortal = () => {
             <p className="text-sm font-medium text-text-primary mb-1">Demo Credentials</p>
             <p className="text-xs text-text-secondary">
               Email: client@company.com<br />
-              Password: KeyEase2025!
+              Password: Kayease2025!
             </p>
           </div>
         </div>
@@ -187,7 +187,7 @@ const ClientPortal = () => {
             variant="outline"
             iconName="HelpCircle"
             iconPosition="left"
-            onClick={() => window.location.href = 'mailto:support@keyease.digital'}
+            onClick={() => window.location.href = 'mailto:support@Kayease.digital'}
           >
             Need Help?
           </Button>

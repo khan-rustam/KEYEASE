@@ -1,7 +1,7 @@
 // Authentication utilities
 export const AUTH_CREDENTIALS = {
-  email: 'info@keyease.com',
-  password: 'Keyease@global.com'
+  email: 'info@Kayease.com',
+  password: 'Kayease@global.com'
 };
 
 // Cookie utilities
@@ -37,11 +37,11 @@ export const login = (email, password) => {
     };
     
     // Store in cookies for 30 minutes
-    setCookie('authToken', 'keyease-admin-token', 30);
+    setCookie('authToken', 'Kayease-admin-token', 30);
     setCookie('userData', JSON.stringify(userData), 30);
     
     // Also store in localStorage as backup
-    localStorage.setItem('authToken', 'keyease-admin-token');
+    localStorage.setItem('authToken', 'Kayease-admin-token');
     localStorage.setItem('user', JSON.stringify(userData));
     
     return { success: true, user: userData };

@@ -337,7 +337,7 @@ const ConsultationWidget = () => {
                 <div className="flex items-center space-x-3">
                   <Icon name="Mail" size={20} className="text-blue-600" />
                   <div>
-                    <div className="font-medium text-slate-900">hello@keyease.com</div>
+                    <div className="font-medium text-slate-900">hello@Kayease.com</div>
                     <div className="text-sm text-slate-600">We respond within 2 hours</div>
                   </div>
                 </div>

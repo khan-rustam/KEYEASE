@@ -16,17 +16,17 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Services - KEYEASE Digital Agency | Web Development, Mobile Apps & Digital Solutions</title>
+        <title>Services - Kayease Digital Agency | Web Development, Mobile Apps & Digital Solutions</title>
         <meta 
           name="description" 
-          content="Explore KEYEASE's comprehensive digital services including web development, mobile apps, e-commerce solutions, and digital strategy. Get instant project estimates with our pricing calculator." 
+          content="Explore Kayease's comprehensive digital services including web development, mobile apps, e-commerce solutions, and digital strategy. Get instant project estimates with our pricing calculator." 
         />
         <meta name="keywords" content="web development, mobile apps, e-commerce, digital strategy, Next.js, React, custom software development" />
-        <meta property="og:title" content="Services - KEYEASE Digital Agency" />
+        <meta property="og:title" content="Services - Kayease Digital Agency" />
         <meta property="og:description" content="Transform your digital vision with our comprehensive services. From web development to mobile apps and digital strategy." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://keyease.com/services" />
+        <link rel="canonical" href="https://Kayease.com/services" />
       </Helmet>
 
       <div className="min-h-screen bg-white">

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Icon from '../../../components/AppIcon';
 
-const WhyKeyease = () => {
+const WhyKayease = () => {
   const valuePropositions = [
     {
       id: 1,
@@ -84,7 +84,7 @@ const WhyKeyease = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-text-primary mb-6">
-            Why Choose <span className="brand-gradient-text">KEYEASE</span>?
+            Why Choose <span className="brand-gradient-text">Kayease</span>?
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
             We combine technical excellence with strategic insight to deliver solutions 
@@ -219,7 +219,7 @@ const WhyKeyease = () => {
               Ready to Transform Your Digital Presence?
             </h3>
             <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-              Let's discuss how KEYEASE can help you unlock your digital potential 
+              Let's discuss how Kayease can help you unlock your digital potential 
               and achieve measurable business growth.
             </p>
             <motion.button
@@ -237,4 +237,4 @@ const WhyKeyease = () => {
   );
 };
 
-export default WhyKeyease;
+export default WhyKayease;

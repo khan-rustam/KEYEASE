@@ -88,7 +88,7 @@ const CTASection = () => {
             Ready to <span className="brand-gradient-text">Start</span> Your Project?
           </h2>
           <p className="text-xl lg:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed mb-12">
-            Transform your digital vision into reality with KEYEASE. 
+            Transform your digital vision into reality with Kayease. 
             Get a free consultation and discover how we can accelerate your growth.
           </p>
 
@@ -267,7 +267,7 @@ const CTASection = () => {
             </div>
             <div className="flex items-center text-blue-200">
               <Icon name="Mail" size={20} className="mr-3" />
-              <span>hello@keyease.com</span>
+              <span>hello@Kayease.com</span>
             </div>
             <div className="flex items-center text-blue-200">
               <Icon name="MessageCircle" size={20} className="mr-3" />

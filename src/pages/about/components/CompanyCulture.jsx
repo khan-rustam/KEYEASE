@@ -70,7 +70,7 @@ const CompanyCulture = () => {
       name: "Jennifer Martinez",
       role: "Senior Developer",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      testimonial: "KEYEASE isn\'t just a workplace—it\'s a community where innovation thrives. The collaborative environment and growth opportunities have accelerated my career beyond what I thought possible.",
+      testimonial: "Kayease isn\'t just a workplace—it\'s a community where innovation thrives. The collaborative environment and growth opportunities have accelerated my career beyond what I thought possible.",
       rating: 5,
       tenure: "2 years"
     },
@@ -86,7 +86,7 @@ const CompanyCulture = () => {
       name: "Amanda Foster",
       role: "Project Manager",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      testimonial: "The work-life balance and professional development opportunities at KEYEASE are outstanding. Leadership truly invests in our growth, and the collaborative culture makes every day enjoyable.",
+      testimonial: "The work-life balance and professional development opportunities at Kayease are outstanding. Leadership truly invests in our growth, and the collaborative culture makes every day enjoyable.",
       rating: 5,
       tenure: "3 years"
     }
@@ -135,7 +135,7 @@ const CompanyCulture = () => {
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Our culture is built on collaboration, innovation, and genuine care for each other's success. 
-            Discover what makes KEYEASE a place where talented people love to work and grow.
+            Discover what makes Kayease a place where talented people love to work and grow.
           </p>
         </div>
 
@@ -257,7 +257,7 @@ const CompanyCulture = () => {
                   <div>
                     <h4 className="font-bold text-slate-900">{testimonial.name}</h4>
                     <p className="text-primary font-medium">{testimonial.role}</p>
-                    <p className="text-sm text-slate-500">{testimonial.tenure} at KEYEASE</p>
+                    <p className="text-sm text-slate-500">{testimonial.tenure} at Kayease</p>
                   </div>
                 </div>
 

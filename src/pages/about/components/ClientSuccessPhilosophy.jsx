@@ -102,7 +102,7 @@ const ClientSuccessPhilosophy = () => {
         "99.9% uptime maintained",
         "40% reduction in operational costs"
       ],
-      testimonial: "KEYEASE didn\'t just build our platform—they became our strategic technology partner. Their long-term thinking and collaborative approach have been instrumental in our growth.",
+      testimonial: "Kayease didn\'t just build our platform—they became our strategic technology partner. Their long-term thinking and collaborative approach have been instrumental in our growth.",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       name: "Marcus Johnson",
       role: "CEO, TechStart Inc."
@@ -117,7 +117,7 @@ const ClientSuccessPhilosophy = () => {
         "50% faster page load times",
         "35% improvement in conversion rate"
       ],
-      testimonial: "The partnership approach made all the difference. KEYEASE understood our business constraints and delivered a solution that exceeded our expectations while staying within budget.",
+      testimonial: "The partnership approach made all the difference. Kayease understood our business constraints and delivered a solution that exceeded our expectations while staying within budget.",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       name: "Sarah Mitchell",
       role: "CTO, RetailMax"

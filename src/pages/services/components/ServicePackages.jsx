@@ -217,7 +217,7 @@ const ServicePackages = () => {
           className="bg-white rounded-2xl p-8 shadow-lg"
         >
           <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">
-            Why Choose KEYEASE?
+            Why Choose Kayease?
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -244,7 +244,7 @@ const ServicePackages = () => {
             <div>
               <h4 className="font-semibold text-slate-900 mb-4 flex items-center">
                 <Icon name="Check" size={20} className="text-green-500 mr-2" />
-                KEYEASE Approach
+                Kayease Approach
               </h4>
               <ul className="space-y-3">
                 {[

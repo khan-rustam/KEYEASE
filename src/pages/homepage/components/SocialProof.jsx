@@ -11,7 +11,7 @@ const SocialProof = () => {
       id: 1,
       name: 'TechFlow Inc.',
       logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop',
-      testimonial: `KEYEASE transformed our digital presence completely. Their technical expertise and strategic approach resulted in a 245% increase in conversions.`,
+      testimonial: `Kayease transformed our digital presence completely. Their technical expertise and strategic approach resulted in a 245% increase in conversions.`,
       author: 'Sarah Johnson',
       position: 'CEO, TechFlow Inc.',
       rating: 5
@@ -47,12 +47,12 @@ const SocialProof = () => {
       id: 5,
       name: 'RetailPro',
       logo: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=200&h=100&fit=crop',
-      testimonial: `Our e-commerce platform saw 180% growth in sales after KEYEASE's optimization and redesign.`,author: 'James Wilson',position: 'VP Marketing, RetailPro',
+      testimonial: `Our e-commerce platform saw 180% growth in sales after Kayease's optimization and redesign.`,author: 'James Wilson',position: 'VP Marketing, RetailPro',
       rating: 5
     },
     {
       id: 6,
-      name: 'StartupLab',logo: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=200&h=100&fit=crop',testimonial: `From MVP to scale, KEYEASE has been our trusted development partner. Exceptional quality and support.`,author: 'Lisa Thompson',position: 'Co-founder, StartupLab',
+      name: 'StartupLab',logo: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=200&h=100&fit=crop',testimonial: `From MVP to scale, Kayease has been our trusted development partner. Exceptional quality and support.`,author: 'Lisa Thompson',position: 'Co-founder, StartupLab',
       rating: 5
     }
   ];

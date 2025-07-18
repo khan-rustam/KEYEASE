@@ -8,7 +8,7 @@ const LiveChat = () => {
     {
       id: 1,
       type: 'bot',
-      message: "Hi! I\'m Sarah from KEYEASE. How can I help you today?",
+      message: "Hi! I\'m Sarah from Kayease. How can I help you today?",
       timestamp: new Date(Date.now() - 300000)
     }
   ]);

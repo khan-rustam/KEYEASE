@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="relative w-full h-full">
           <Image
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-            alt="KEYEASE team collaboration"
+            alt="Kayease team collaboration"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-sky-400/20"></div>
@@ -34,7 +34,7 @@ const HeroSection = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight">
             We Are{' '}
-            <span className="brand-gradient-text">KEYEASE</span>
+            <span className="brand-gradient-text">Kayease</span>
           </h1>
 
           {/* Mission Statement */}

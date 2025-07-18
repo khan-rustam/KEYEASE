@@ -124,7 +124,7 @@ const HeroSection = () => {
           >
             We architect digital ecosystems that scale with your ambition.
             Transform complex challenges into streamlined solutions with
-            KEYEASE.
+            Kayease.
           </motion.p>
 
           {/* CTA Buttons */}

@@ -4,7 +4,7 @@ import HeroSection from "./components/HeroSection";
 import ServicesPreview from "./components/ServicesPreview";
 import PortfolioCarousel from "./components/PortfolioCarousel";
 import SocialProof from "./components/SocialProof";
-import WhyKeyease from "./components/WhyKeyease";
+import WhyKayease from "./components/WhyKayease";
 import CTASection from "./components/CTASection";
 
 const Homepage = () => {
@@ -14,14 +14,14 @@ const Homepage = () => {
 
     // Set page title
     document.title =
-      "KEYEASE - Unlocking Digital Potential | Premium Digital Agency";
+      "Kayease - Unlocking Digital Potential | Premium Digital Agency";
 
     // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Transform your digital vision into reality with KEYEASE. We deliver smart, scalable solutions from code to conversions. Expert web development, mobile apps, and digital strategy services."
+        "Transform your digital vision into reality with Kayease. We deliver smart, scalable solutions from code to conversions. Expert web development, mobile apps, and digital strategy services."
       );
     }
   }, []);
@@ -68,14 +68,14 @@ const Homepage = () => {
           <SocialProof />
         </motion.div>
 
-        {/* Why KEYEASE Section */}
+        {/* Why Kayease Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <WhyKeyease />
+          <WhyKayease />
         </motion.div>
 
         {/* CTA Section */}

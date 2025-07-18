@@ -14,12 +14,12 @@ const About = () => {
     window.scrollTo(0, 0);
     
     // Set page title
-    document.title = 'About Us - KEYEASE Digital Agency | Our Story, Team & Values';
+    document.title = 'About Us - Kayease Digital Agency | Our Story, Team & Values';
     
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Discover KEYEASE Digital Agency\'s story, meet our expert team, and learn about our values. We\'re your trusted digital transformation partner, turning challenges into scalable solutions.');
+      metaDescription.setAttribute('content', 'Discover Kayease Digital Agency\'s story, meet our expert team, and learn about our values. We\'re your trusted digital transformation partner, turning challenges into scalable solutions.');
     }
   }, []);
 

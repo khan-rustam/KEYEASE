@@ -166,8 +166,8 @@ const Dashboard = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
               <img
-                src="/KEYEASE-logo.png"
-                alt="KEYEASE Logo"
+                src="/Kayease-logo.png"
+                alt="Kayease Logo"
                 className="h-8"
               />
               <div className="h-6 w-px bg-slate-300"></div>

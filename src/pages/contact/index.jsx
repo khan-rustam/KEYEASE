@@ -81,7 +81,7 @@ const Contact = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-6"
             >
               Get In Touch With{' '}
-              <span className="brand-gradient-text">KEYEASE</span>
+              <span className="brand-gradient-text">Kayease</span>
             </motion.h1>
 
             <motion.p 
@@ -217,7 +217,7 @@ const Contact = () => {
                 </a>
                 
                 <a
-                  href="mailto:emergency@keyease.digital"
+                  href="mailto:emergency@Kayease.digital"
                   className="flex items-center space-x-2 px-6 py-3 border border-destructive text-destructive rounded-lg hover:bg-destructive/5 transition-colors font-medium"
                 >
                   <Icon name="Mail" size={20} />

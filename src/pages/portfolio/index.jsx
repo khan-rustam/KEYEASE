@@ -88,13 +88,13 @@ const Portfolio = () => {
         "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop&crop=center"
       ],
       testimonial: {
-        content: "KEYEASE transformed our practice operations completely. The dashboard is intuitive, powerful, and has significantly improved our patient care quality.",
+        content: "Kayease transformed our practice operations completely. The dashboard is intuitive, powerful, and has significantly improved our patient care quality.",
         author: "Dr. Sarah Johnson",
         position: "Chief Medical Officer",
         company: "MedTech Solutions"
       },
       liveUrl: "https://healthcare-pro-demo.com",
-      caseStudyUrl: "https://keyease.com/case-studies/healthcare-pro",
+      caseStudyUrl: "https://Kayease.com/case-studies/healthcare-pro",
       timeline: "5 months"
     },
     {
@@ -229,7 +229,7 @@ const Portfolio = () => {
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
       ],
       testimonial: {
-        content: "KEYEASE delivered an exceptional e-commerce platform that perfectly aligns with our sustainability mission. Sales have tripled since launch.",
+        content: "Kayease delivered an exceptional e-commerce platform that perfectly aligns with our sustainability mission. Sales have tripled since launch.",
         author: "Emma Rodriguez",
         position: "Founder & CEO",
         company: "Green Commerce Ltd"
@@ -470,9 +470,9 @@ const Portfolio = () => {
   return (
     <>
       <Helmet>
-        <title>Portfolio - KEYEASE Digital Agency</title>
-        <meta name="description" content="Explore KEYEASE's portfolio of successful digital projects across SaaS, E-commerce, Healthcare, and Fintech industries. View case studies and client success stories." />
-        <meta name="keywords" content="portfolio, case studies, web development, mobile apps, digital agency, KEYEASE" />
+        <title>Portfolio - Kayease Digital Agency</title>
+        <meta name="description" content="Explore Kayease's portfolio of successful digital projects across SaaS, E-commerce, Healthcare, and Fintech industries. View case studies and client success stories." />
+        <meta name="keywords" content="portfolio, case studies, web development, mobile apps, digital agency, Kayease" />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

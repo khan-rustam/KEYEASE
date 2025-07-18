@@ -74,8 +74,8 @@ const Header = () => {
           >
             <div className="relative flex items-center space-x-3">
               <img
-                src={"/KEYEASE-logo.png"}
-                alt="KEYEASE Logo"
+                src={"/Kayease-logo.png"}
+                alt="Kayease Logo"
                 className="w-36 h-40 object-contain rounded-lg transition-all duration-300"
               />
             </div>

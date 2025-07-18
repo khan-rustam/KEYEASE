@@ -136,8 +136,8 @@ const Login = () => {
         >
           <div className="inline-block mb-6">
             <img
-              src="/KEYEASE-logo.png"
-              alt="KEYEASE Logo"
+              src="/Kayease-logo.png"
+              alt="Kayease Logo"
               className="h-12 mx-auto cursor-pointer"
               onClick={() => navigate('/')}
             />
@@ -295,8 +295,8 @@ const Login = () => {
             <div>
               <p className="text-sm font-medium text-slate-800 mb-1">Admin Access</p>
               <p className="text-xs text-slate-600">
-                Email: info@keyease.com<br />
-                Password: Keyease@global.com
+                Email: info@Kayease.com<br />
+                Password: Kayease@global.com
               </p>
               <p className="text-xs text-slate-500 mt-1">
                 Session expires after 30 minutes of inactivity

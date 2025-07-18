@@ -8,7 +8,7 @@ const CompanyTimeline = () => {
     {
       year: 2019,
       title: "The Foundation",
-      description: "KEYEASE was born from a simple belief: digital transformation should unlock potential, not create complexity.",
+      description: "Kayease was born from a simple belief: digital transformation should unlock potential, not create complexity.",
       achievements: [
         "Founded by three passionate developers",
         "First client: Local restaurant chain",
@@ -94,7 +94,7 @@ const CompanyTimeline = () => {
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             From a small startup to a trusted digital transformation partner, 
-            discover the key moments that shaped KEYEASE into who we are today.
+            discover the key moments that shaped Kayease into who we are today.
           </p>
         </div>
 

@@ -16,7 +16,7 @@ const LocationMap = () => {
           <div className="flex items-start space-x-3">
             <Icon name="MapPin" size={20} className="text-primary mt-1" />
             <div>
-              <p className="font-medium text-text-primary">KEYEASE Digital Agency</p>
+              <p className="font-medium text-text-primary">Kayease Digital Agency</p>
               <p className="text-text-secondary">123 Innovation Drive</p>
               <p className="text-text-secondary">San Francisco, CA 94105</p>
             </div>
@@ -39,7 +39,7 @@ const LocationMap = () => {
           width="100%"
           height="100%"
           loading="lazy"
-          title="KEYEASE Digital Agency Location"
+          title="Kayease Digital Agency Location"
           referrerPolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps?q=37.7749,-122.4194&z=14&output=embed"
           className="border-0"

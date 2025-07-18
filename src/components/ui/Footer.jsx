@@ -24,14 +24,14 @@ const socials = [
   // Lucide icon names: Instagram, Twitter, Linkedin, Youtube
   {
     name: "Instagram",
-    url: "https://www.instagram.com/keyease.global/",
+    url: "https://www.instagram.com/Kayease.global/",
     icon: "Instagram",
     color: "hover:text-pink-500",
     bgColor: "hover:bg-pink-50",
   },
   {
     name: "Twitter",
-    url: "https://x.com/Keyeaseglobal",
+    url: "https://x.com/Kayeaseglobal",
     icon: "Twitter",
     color: "hover:text-blue-400",
     bgColor: "hover:bg-blue-50",
@@ -45,7 +45,7 @@ const socials = [
   },
   {
     name: "YouTube",
-    url: "https://www.youtube.com/@KEYEASEGLOBAL",
+    url: "https://www.youtube.com/@KayeaseGLOBAL",
     icon: "Youtube", // Correct Lucide name
     color: "hover:text-red-500",
     bgColor: "hover:bg-red-50",
@@ -127,8 +127,8 @@ const Footer = () => {
             <Link to="/homepage" className="flex items-center space-x-3 group">
               <div className="relative flex items-center space-x-3">
                 <img
-                  src={"/KEYEASE-logo.png"}
-                  alt="KEYEASE Logo"
+                  src={"/Kayease-logo.png"}
+                  alt="Kayease Logo"
                   className="w-52 h-28 object-contain rounded-lg transition-all duration-300"
                 />
               </div>
@@ -146,10 +146,10 @@ const Footer = () => {
                   <Mail size={16} className="text-primary" strokeWidth={2} />
                 </div>
                 <a
-                  href="mailto:info@keyease.com"
+                  href="mailto:info@Kayease.com"
                   className="text-sm text-slate-600 hover:text-primary transition-colors duration-200 hover:underline"
                 >
-                  info@keyease.com
+                  info@Kayease.com
                 </a>
               </div>
               <div className="flex items-center space-x-3 group">
@@ -309,7 +309,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-4 mb-6 justify-start">
               <a
-                href="https://www.instagram.com/keyease.global/"
+                href="https://www.instagram.com/Kayease.global/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -321,7 +321,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://x.com/Keyeaseglobal"
+                href="https://x.com/Kayeaseglobal"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter/X"
@@ -345,7 +345,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.youtube.com/@KEYEASEGLOBAL"
+                href="https://www.youtube.com/@KayeaseGLOBAL"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
@@ -397,7 +397,7 @@ const Footer = () => {
           }`}
         >
           <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6 text-xs text-slate-500">
-            <p>© {new Date().getFullYear()} KEYEASE. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Kayease. All rights reserved.</p>
             <div className="flex space-x-4">
               <a
                 href="/privacy"

@@ -94,7 +94,7 @@ const FAQSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-3">
               <button
-                onClick={() => window.location.href = 'mailto:hello@keyease.digital'}
+                onClick={() => window.location.href = 'mailto:hello@Kayease.digital'}
                 className="flex items-center space-x-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
               >
                 <Icon name="Mail" size={16} />

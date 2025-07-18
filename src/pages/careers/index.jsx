@@ -335,7 +335,7 @@ const CareersPage = () => {
             }`}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Why Work With <span className="brand-gradient-text">KEYEASE</span>?
+              Why Work With <span className="brand-gradient-text">Kayease</span>?
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               We believe in creating an environment where our team can thrive, grow, and make meaningful impact.

@@ -7,10 +7,10 @@ const ContactInfo = () => {
     {
       icon: 'Mail',
       title: 'Email Us',
-      primary: 'hello@keyease.digital',
-      secondary: 'support@keyease.digital',
+      primary: 'hello@Kayease.digital',
+      secondary: 'support@Kayease.digital',
       description: 'Get a response within 24 hours',
-      action: 'mailto:hello@keyease.digital',
+      action: 'mailto:hello@Kayease.digital',
       actionText: 'Send Email'
     },
     {
@@ -34,10 +34,10 @@ const ContactInfo = () => {
   ];
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: 'Linkedin', url: 'https://linkedin.com/company/keyease' },
-    { name: 'Twitter', icon: 'Twitter', url: 'https://twitter.com/keyease' },
-    { name: 'Instagram', icon: 'Instagram', url: 'https://instagram.com/keyease' },
-    { name: 'GitHub', icon: 'Github', url: 'https://github.com/keyease' }
+    { name: 'LinkedIn', icon: 'Linkedin', url: 'https://linkedin.com/company/Kayease' },
+    { name: 'Twitter', icon: 'Twitter', url: 'https://twitter.com/Kayease' },
+    { name: 'Instagram', icon: 'Instagram', url: 'https://instagram.com/Kayease' },
+    { name: 'GitHub', icon: 'Github', url: 'https://github.com/Kayease' }
   ];
 
   const handleContactClick = (action) => {
