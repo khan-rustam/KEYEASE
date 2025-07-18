@@ -230,42 +230,27 @@ const ServiceCategories = () => {
                   </div>
                 </div>
 
-                {/* Project Info */}
-                <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
-                    <Icon name="Clock" size={24} className="text-blue-500 mx-auto mb-2" />
-                    <div className="font-semibold text-slate-900">Timeline</div>
-                    <div className="text-slate-600">{activeService.timeline}</div>
-                  </div>
-                  <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
-                    <Icon name="DollarSign" size={24} className="text-green-500 mx-auto mb-2" />
-                    <div className="font-semibold text-slate-900">Starting From</div>
-                    <div className="text-slate-600">{activeService.startingPrice}</div>
-                  </div>
-                  <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
-                    <Icon name="Users" size={24} className="text-purple-500 mx-auto mb-2" />
-                    <div className="font-semibold text-slate-900">Team Size</div>
-                    <div className="text-slate-600">3-5 Experts</div>
-                  </div>
-                </div>
+                {/* Project Info removed as per request */}
 
-                {/* CTA */}
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <Button
                     variant="default"
                     className="cta-button text-white font-semibold px-6"
-                    iconName="MessageCircle"
+                    iconName="UserPlus"
                     iconPosition="left"
+                    onClick={() => window.location.href = '/contact'}
                   >
-                    Discuss This Service
+                    Hire Us
                   </Button>
                   <Button
                     variant="outline"
-                    className="border-slate-300 hover:border-blue-500"
-                    iconName="FileText"
+                    className="border-green-500 text-green-600 hover:bg-green-50 flex items-center justify-center"
+                    iconName="MessageCircle"
                     iconPosition="left"
+                    style={{ backgroundColor: '#25D366', color: '#fff', borderColor: '#25D366' }}
+                    onClick={() => window.open('https://wa.me/919784081045?text=Hi%20Kayease%20Team%2C%20I%20am%20interested%20in%20your%20services!', '_blank')}
                   >
-                    View Case Studies
+                    <span className="font-semibold">WhatsApp</span>
                   </Button>
                 </div>
               </motion.div>

@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Icon from '../../../components/AppIcon';
-import Button from '../../../components/ui/Button';
+import React from "react";
+import { motion } from "framer-motion";
+import Icon from "../../../components/AppIcon";
+import Button from "../../../components/ui/Button";
 
 const ServiceHero = () => {
   return (
@@ -23,7 +23,9 @@ const ServiceHero = () => {
             className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-3 mb-8 shadow-lg"
           >
             <Icon name="Sparkles" size={16} className="text-blue-600" />
-            <span className="text-sm font-medium text-slate-700">Premium Digital Solutions</span>
+            <span className="text-sm font-medium text-slate-700">
+              Premium Digital Solutions
+            </span>
           </motion.div>
 
           {/* Main Heading */}
@@ -44,7 +46,7 @@ const ServiceHero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
-            From cutting-edge web applications to mobile experiences that scale, 
+            From cutting-edge web applications to mobile experiences that scale,
             we architect digital solutions that unlock your business potential.
           </motion.p>
 
@@ -62,16 +64,7 @@ const ServiceHero = () => {
               iconName="Calendar"
               iconPosition="left"
               iconSize={20}
-            >
-              Book Consultation
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-2 border-slate-300 hover:border-blue-500 px-8 py-4"
-              iconName="Play"
-              iconPosition="left"
-              iconSize={20}
+              onClick={() => (window.location.href = "/portfolio")}
             >
               View Our Work
             </Button>
@@ -88,7 +81,7 @@ const ServiceHero = () => {
               { number: "200+", label: "Projects Delivered" },
               { number: "50+", label: "Happy Clients" },
               { number: "99%", label: "Success Rate" },
-              { number: "24/7", label: "Support Available" }
+              { number: "24/7", label: "Support Available" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold brand-gradient-text mb-2">
@@ -103,20 +96,7 @@ const ServiceHero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="flex flex-col items-center space-y-2">
-          <span className="text-sm text-slate-500 font-medium">Explore Services</span>
-          <div className="w-6 h-10 border-2 border-slate-300 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-slate-400 rounded-full mt-2 animate-bounce"></div>
-          </div>
-        </div>
-      </motion.div>
+    
     </section>
   );
 };

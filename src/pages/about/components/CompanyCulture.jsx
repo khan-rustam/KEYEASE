@@ -235,66 +235,6 @@ const CompanyCulture = () => {
             ))}
           </div>
         </div>
-
-        {/* Employee Testimonials */}
-        <div>
-          <h3 className="text-3xl font-bold text-slate-900 text-center mb-12">
-            What Our Team Says
-          </h3>
-          
-          <div className="grid lg:grid-cols-3 gap-8">
-            {employeeTestimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <div className="flex items-center space-x-4 mb-6">
-                  <Image
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold text-slate-900">{testimonial.name}</h4>
-                    <p className="text-primary font-medium">{testimonial.role}</p>
-                    <p className="text-sm text-slate-500">{testimonial.tenure} at Kayease</p>
-                  </div>
-                </div>
-
-                <div className="flex space-x-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
-                  ))}
-                </div>
-
-                <p className="text-slate-600 leading-relaxed italic">
-                  "{testimonial.testimonial}"
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Culture CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl p-8 shadow-xl border border-slate-200">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
-              Ready to Be Part of Our Culture?
-            </h3>
-            <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
-              Join a team that values innovation, collaboration, and personal growth. 
-              Discover opportunities to make a meaningful impact while building your career.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="cta-button px-8 py-3 rounded-lg text-white font-medium hover:shadow-lg transition-all duration-300">
-                Explore Careers
-              </button>
-              <button className="px-8 py-3 rounded-lg border-2 border-slate-300 text-slate-700 hover:bg-slate-50 font-medium transition-all duration-300">
-                Schedule a Culture Call
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
-import React from 'react';
-import Icon from '../../../components/AppIcon';
-import Image from '../../../components/AppImage';
-import Button from '../../../components/ui/Button';
+import React from "react";
+import Icon from "../../../components/AppIcon";
+import Image from "../../../components/AppImage";
+import Button from "../../../components/ui/Button";
 
 const HeroSection = () => {
   return (
@@ -28,26 +28,29 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 mb-8 shadow-lg border border-slate-200/50">
             <Icon name="Zap" size={20} className="text-primary" />
-            <span className="text-sm font-medium text-slate-700">Unlocking Digital Potential Since 2019</span>
+            <span className="text-sm font-medium text-slate-700">
+              Unlocking Digital Potential Since 2019
+            </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight">
-            We Are{' '}
-            <span className="brand-gradient-text">Kayease</span>
+            We Are <span className="brand-gradient-text">Kayease</span>
           </h1>
 
           {/* Mission Statement */}
           <p className="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Your trusted digital transformation partner, turning complex challenges into streamlined solutions that scale with your ambition.
+            Your trusted digital transformation partner, turning complex
+            challenges into streamlined solutions that scale with your ambition.
           </p>
 
           {/* Sub-mission */}
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-10 shadow-xl border border-slate-200/50 max-w-2xl mx-auto">
             <p className="text-lg text-slate-700 leading-relaxed">
-              We don't just build websites or apps—we architect digital ecosystems that unlock unlimited potential. 
-              Every line of code, every design decision, every strategic choice is crafted to make the complex feel simple 
-              and the impossible feel achievable.
+              We don't just build websites or apps—we architect digital
+              ecosystems that unlock unlimited potential. Every line of code,
+              every design decision, every strategic choice is crafted to make
+              the complex feel simple and the impossible feel achievable.
             </p>
           </div>
 
@@ -59,27 +62,19 @@ const HeroSection = () => {
               iconName="ArrowRight"
               iconPosition="right"
               iconSize={20}
+              onClick={() => (window.location.href = "/contact")}
             >
               Start Your Journey
-            </Button>
-            <Button
-              variant="outline"
-              className="border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-4 text-lg font-medium"
-              iconName="Play"
-              iconPosition="left"
-              iconSize={20}
-            >
-              Watch Our Story
             </Button>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-3xl mx-auto">
             {[
-              { number: '150+', label: 'Projects Delivered' },
-              { number: '50+', label: 'Happy Clients' },
-              { number: '5+', label: 'Years Experience' },
-              { number: '24/7', label: 'Support Available' }
+              { number: "150+", label: "Projects Delivered" },
+              { number: "50+", label: "Happy Clients" },
+              { number: "5+", label: "Years Experience" },
+              { number: "24/7", label: "Support Available" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold brand-gradient-text mb-2">
@@ -97,7 +92,9 @@ const HeroSection = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="flex flex-col items-center space-y-2 animate-bounce">
-          <span className="text-sm text-slate-500 font-medium">Discover Our Story</span>
+          <span className="text-sm text-slate-500 font-medium">
+            Discover Our Story
+          </span>
           <Icon name="ChevronDown" size={24} className="text-slate-400" />
         </div>
       </div>

@@ -6,7 +6,6 @@ import FilterTabs from "./components/FilterTabs";
 import ProjectModal from "./components/ProjectModal";
 import StatsSection from "./components/StatsSection";
 import ClientLogos from "./components/ClientLogos";
-import FeaturedCaseStudy from "./components/FeaturedCaseStudy";
 
 import Button from "../../components/ui/Button";
 
@@ -605,8 +604,6 @@ const Portfolio = () => {
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
-        
-
         {/* Hero Section */}
         <section className="pt-24 pb-16 bg-gradient-to-br from-primary/10 via-secondary/5 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -638,18 +635,11 @@ const Portfolio = () => {
                 <Button
                   variant="default"
                   className="cta-button"
-                  iconName="Play"
+                  iconName="UserPlus"
                   iconPosition="left"
+                  onClick={() => (window.location.href = "/contact")}
                 >
-                  Watch Success Stories
-                </Button>
-
-                <Button
-                  variant="outline"
-                  iconName="Download"
-                  iconPosition="left"
-                >
-                  Download Portfolio PDF
+                  Create Your Success Story
                 </Button>
               </motion.div>
             </div>
@@ -685,28 +675,10 @@ const Portfolio = () => {
                 </motion.div>
               ))}
             </motion.div>
-
-            {/* Load More Button */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="text-center mt-12"
-            >
-              <Button
-                variant="outline"
-                iconName="Plus"
-                iconPosition="left"
-                className="px-8 py-3"
-              >
-                Load More Projects
-              </Button>
-            </motion.div>
           </div>
         </section>
 
-        {/* Featured Case Study */}
-        <FeaturedCaseStudy />
+       
 
         {/* Stats Section */}
         <StatsSection />

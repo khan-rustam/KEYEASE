@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react';
 import HeroSection from './components/HeroSection';
-import CompanyTimeline from './components/CompanyTimeline';
 import PhilosophySection from './components/PhilosophySection';
 import TeamSpotlight from './components/TeamSpotlight';
 import CompanyCulture from './components/CompanyCulture';
 import ValuesSection from './components/ValuesSection';
-import ClientSuccessPhilosophy from './components/ClientSuccessPhilosophy';
-import TrustSignals from './components/TrustSignals';
 
 const About = () => {
   useEffect(() => {
@@ -29,9 +26,7 @@ const About = () => {
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
         <HeroSection />
-        
-        {/* Company Timeline */}
-        <CompanyTimeline />
+      
         
         {/* Philosophy Section */}
         <PhilosophySection />
@@ -45,11 +40,6 @@ const About = () => {
         {/* Values Section */}
         <ValuesSection />
         
-        {/* Client Success Philosophy */}
-        <ClientSuccessPhilosophy />
-        
-        {/* Trust Signals */}
-        <TrustSignals />
       </main>
       
     </div>
